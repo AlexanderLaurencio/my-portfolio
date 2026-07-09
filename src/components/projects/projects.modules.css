@@ -1,0 +1,23 @@
+.projectsSection{
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+.projectsSection_title{
+    padding: var(--space-xl) 0;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    font-size: var(--font-size-h2);
+    align-self: center;
+}
+
+.projectsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,410px));
+    grid-template-rows: 460px;
+    grid-auto-rows: 460px;
+    justify-content: center;
+    align-content: center;
+    gap: var(--space-xl);
+}

@@ -1,0 +1,41 @@
+.contact, .contactSkeleton{
+    width: 240px;
+    height: 240px;
+    background-color: var(--bg-secondary);
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-medium);
+    padding: var(--space-l);
+    align-items: center;
+    justify-content: center;
+}
+
+.contactSkeleton{
+    gap: var(--space-m) 0;
+}
+
+.contact:hover{
+    outline: 1.5px solid var(--border-color);
+}
+
+.contact_type{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+.contact a img, .contactSkeleton_image{
+    width: 148px;
+    height: 148px;
+}
+
+.contactSkeleton_type, .contactSkeleton_image{
+    background-color: var(--border-color);
+    border-radius: var(--border-radius-small);
+}
+
+.contactSkeleton_type{
+    width: 70%;
+    height: 25px;
+    text-align: center;
+}

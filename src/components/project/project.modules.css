@@ -1,0 +1,115 @@
+.project, .projectSkeleton{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 4fr .5fr 4fr .5fr;
+    grid-template-areas: 
+    "name name"
+    "image image"
+    "site repo"
+    "description description"
+    "skills skills"
+    ;
+    background-color: var(--bg-secondary);
+    padding: var(--space-m);
+    border-radius: var(--border-radius-small);
+    gap: var(--space-l) 0;
+    height: 460px;
+}
+
+.project_name, .projectSkeleton_name{
+    grid-area: name;
+    color: var(--text-primary);
+    font-size: var(--font-size-h7);
+    text-align: center;
+}
+
+.project > img, .projectSkeleton_image{
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius-small);
+}
+
+.projectButton_link, .projectButton_repo{
+    text-decoration: none;
+    display: inline-block;
+    padding: var(--space-xs) var(--space-m);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 var(--space-s);
+    width: 80%;
+    align-self: center;
+    border-radius: var(--border-radius-small);
+    font-size: var(--font-size-small);
+    justify-self: center;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+.projectButton_link:hover, .projectButton_repo:hover{
+    outline: 1.5px solid var(--text-secondary);
+}
+
+.projectButton_link img, .projectButton_repo img{
+    width: 28px;
+    height: 28px;
+}
+
+.projectButton_link, .projectSkeletonButton_link{
+    grid-area: site;
+    background-color: var(--blue-gradient);
+}
+
+.projectButton_repo, .projectSkeletonButton_repo{
+    grid-area: repo;
+    background-color: var(--purple-gradient);
+}
+
+.project_description, .projectSkeleton_description{
+    grid-area: description;
+    color: var(--text-secondary);
+    text-wrap: pretty;
+    text-align: center;
+}
+
+.project .skillsWrapper, .projectSkeleton{
+    grid-area: skills;
+    display: flex;
+    justify-content: start;
+}
+
+.hero .skillsWrapper img{
+    max-width: 28px;
+    max-height: 28px;
+}
+
+.project .skillsWrapper img{
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.projectSkeleton_name, .projectSkeleton_image, 
+.projectSkeletonButton_link, .projectSkeletonButton_repo,
+.projectSkeleton_description, .projectSkeleton{
+    border-radius: var(--border-radius-small);
+    background-color: var(--border-color);
+    padding: var(--space-m);
+    width: 90%;
+    justify-self: center;
+}
+
+.projectSkeleton_name{
+    width: 60%;
+    justify-self: center;
+}
+
+.projectSkeleton_image{
+    width: 100%;
+    height: 100%;
+}
+
+.projectSkeleton_description{
+    max-height: 65%;
+    width: 100%;
+}

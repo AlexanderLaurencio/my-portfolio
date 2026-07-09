@@ -1,0 +1,17 @@
+.skillsWrapper{
+    display: flex;
+    justify-content: center;
+    gap: var(--space-l);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skillsWrapper img, .skillSkeleton{
+    max-width: 48px;
+    max-height: 48px;
+    transition: all .2s ease-in-out;
+}
+
+.hero .skillsWrapper img:hover{
+    scale: 1.1;
+}
