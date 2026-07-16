@@ -120,3 +120,37 @@ body{
     border: 0;
     background-color: transparent;
 }
+
+.notFound{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    gap: var(--space-x) 0;
+}
+
+.notFound h1, h2{
+    color: var(--text-primary);
+}
+
+.notFound h1{
+    font-size: var(--font-size-h4);
+}
+
+.notFound h2{
+    font-weight: 400;
+}
+
+.notFound .goBack{
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+    font-size: var(--font-size-small);
+    border: 0;
+    padding: var(--space-xs) var(--space-l);
+    border-radius: var(--border-radius-small);
+}
+
+.notFound .goBack:hover{
+    opacity: .8;
+}
