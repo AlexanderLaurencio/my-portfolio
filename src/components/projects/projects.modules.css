@@ -10,6 +10,7 @@
     text-transform: uppercase;
     font-size: var(--font-size-h2);
     align-self: center;
+    margin: var(--space-xl) 0;
 }
 
 .projectsContainer{

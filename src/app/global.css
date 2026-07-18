@@ -154,7 +154,3 @@ body{
 .notFound .goBack:hover{
     opacity: .8;
 }
-
-section h2{
-    margin: var(--space-xl) 0;
-}
