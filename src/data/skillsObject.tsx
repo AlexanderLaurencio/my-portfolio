@@ -40,5 +40,10 @@ export let skillsObject: SkillsObject = {
         id: 8,
         title: "NPM",
         url: "/icons/npm.svg"
+    },
+    sqlite3:{
+        id: 0,
+        title: "SQLite3",
+        url: "/icons/sqlite3.svg"
     }
 };

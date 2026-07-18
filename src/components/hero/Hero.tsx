@@ -9,9 +9,9 @@ export default function Hero() {
             <div className="heroTextContainer">
                 <h1 className="hero_title">alexander neftali miranda</h1>
                 <p className="hero_paragraph">
-                    I'm Alexander a frontend web developer with <b>+3 years</b> of experience in tech industry.
+                    Hi, I'm Alexander a full-stack web developer from the Dominican Republic with more than <b>+1 year</b> of experience building web applications.
                 </p>
-                <h2 className="hero_subtitle">Frontend Web Developer</h2>
+                <h2 className="hero_subtitle">Full-Stack Web Developer</h2>
             </div>
             <Image 
             title="Alexander Neftali Miranda"
