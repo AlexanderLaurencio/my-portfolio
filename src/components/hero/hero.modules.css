@@ -35,7 +35,7 @@
 .hero_paragraph{
     font-size: var(--font-size-small);
     color: var(--text-secondary);
-    width: 60%;
+    width: 70%;
     align-self: center;
 }
 
