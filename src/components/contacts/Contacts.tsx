@@ -6,7 +6,7 @@ import ContactSkeleton from "../contact/ContactSkeleton";
 export default function Contacts() {
     return(
         <section className="contacts">
-            <h3 className="contacts_title">Contacts</h3>
+            <h2 className="contacts_title">Contacts</h2>
             <div className="contacts_container">
                 <Suspense fallback={<ContactSkeleton />}>
                     <Contact contactType="github" image="/icons/github.svg" url="https://github.com/AlexanderLaurencio/"/>

@@ -9,7 +9,7 @@
     "text image"
     "skills image";
     gap: 0 var(--space-xs);
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .heroTextContainer, .heroSkeletonTextContainer{
@@ -53,8 +53,9 @@
 }
 
 .heroSkeleton_image, .hero > img{
-    height: 65dvh;
+    height: 380px;
     width: 100%;
+    max-width: 400px;
     align-self: center;
     border-radius: var(--border-radius-medium);
     background-color: var(--bg-secondary);
@@ -155,14 +156,18 @@
         font-size: var(--font-size-h7);
         margin-top: var(--space-xl);
     }
+
+    .heroSkeleton_image, .hero > img{
+        justify-self: center;
+    }
 }
 
 @media screen and (max-width: 860px) {
     .hero, .heroSkeleton{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 35% 45% 20%;
-        height: 100dvh;
+        grid-template-rows: 35% 290px 20%;
+        min-height: 100dvh;
         padding: 0 var(--space-xs);
         max-width: 100%;
         grid-template-areas: 
@@ -179,8 +184,8 @@
     }
 
     .hero > img, .heroSkeleton_image{
-        max-height: 95%;
-        max-width: 320px;
+        height: 100%;
+        max-width: 300px;
         margin: auto;
     }
 
@@ -193,7 +198,7 @@
         justify-content: center;
         gap: var(--space-l);
         align-items: center;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 
     .heroSkeletonTextContainer{
