@@ -88,7 +88,7 @@
   	--border-radius-large: 1rem;
 }
 
-.darkmode{
+.lightmode{
     --bg-primary: hsla(0, 0%, 98%, 1);
 	--bg-secondary: hsla(0, 0%, 88%, 1);
 	--border-color: hsla(0, 0%, 39%, 1);

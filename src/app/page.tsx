@@ -14,36 +14,36 @@ export default function Home() {
   let [isDarkmode, setIsDarkmode] = useState<boolean>();
     useEffect(() => {
         switch (localStorage.getItem("theme")) {
-        case null:
-            localStorage.setItem("theme","light")
-            setIsDarkmode(false)
-            break
-        case "light":
-            document.body.classList.remove("darkmode");
-            break
-        case "dark":
+          case null:
             setIsDarkmode(true)
-            document.body.classList.add("darkmode");
-            break
+            localStorage.setItem("theme","dark")
+            break;
+          case "dark":
+            setIsDarkmode(true)
+            break;
+          case "light":
+            setIsDarkmode(false);
+            document.body.classList.add("lightmode");
+            break;
         }  
     },[]);
   function toggleTheme() {
-        if (localStorage.getItem("theme") === "dark") {
-            localStorage.setItem("theme","light");
-            document.body.classList.remove("darkmode");
-            setIsDarkmode(false);
-        } else if (localStorage.getItem("theme") === "light") {
+        if (localStorage.getItem("theme") === "light") {
             localStorage.setItem("theme","dark");
-            document.body.classList.add("darkmode");
+            document.body.classList.remove("lightmode");
             setIsDarkmode(true);
+        } else if (localStorage.getItem("theme") === "dark") {
+            localStorage.setItem("theme","light");
+            document.body.classList.add("lightmode");
+            setIsDarkmode(false);
         }
     }; 
   return (
     <>
       <Button onClick={toggleTheme} className="switchThemeButton">
         {isDarkmode 
-        ?<Image src="/icons/moon.svg" alt="moon" title="moon" width="24" height="24" />
-        :<Image src="/icons/sun.svg" alt="sun" title="sun" width="24" height="24" />}
+        ?<Image src="/icons/sun.svg" alt="sun" title="sun" width="24" height="24" />
+        :<Image src="/icons/moon.svg" alt="moon" title="moon" width="24" height="24" />}
       </Button>
       <Suspense fallback={<HeroSkeleton />}>
         <Hero />

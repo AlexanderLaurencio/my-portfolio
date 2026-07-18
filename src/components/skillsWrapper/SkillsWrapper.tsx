@@ -1,15 +1,12 @@
-import { Skill } from "@/types/types";
+import { SkillsArray } from "@/types/types";
 import Image from "next/image";
 import "./skillsWrapper.modules.css"
 
-interface SkillsProp{
-    skills: Skill[]
-};
 
-export default function SkillsWrapper({skills}: SkillsProp) {
+export default function SkillsWrapper(skills: SkillsArray) {
     return(
         <div className="skillsWrapper">
-            {skills.map(s => {
+            {skills.skills.map(s => { 
                 return(
                     <Image 
                     key={s.id}

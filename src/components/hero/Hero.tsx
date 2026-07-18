@@ -1,11 +1,9 @@
-"use client"
 import Image from "next/image"
 import SkillsWrapper from "../skillsWrapper/SkillsWrapper"
-import { skillsArray } from "@/data/skillsArray"
+import { skillsObject } from "@/data/skillsObject"
 import "./hero.modules.css"
 
 export default function Hero() {
-    let skillsArrayCopy = Object.values(skillsArray);
     return(
         <main className="hero">
             <div className="heroTextContainer">
@@ -24,7 +22,7 @@ export default function Hero() {
             />
             <section className="skillsSection">
                 <h2 className="skillsSection_title">Skills</h2>
-                <SkillsWrapper skills={skillsArrayCopy}/>
+                <SkillsWrapper skills={Object.values(skillsObject)}/>
             </section>
         </main>
     )

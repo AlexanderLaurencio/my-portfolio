@@ -4,7 +4,15 @@ export interface Skill{
     url: string
 };
 
-export interface ProjectType{
+export type SkillsArray = {
+    skills: Skill[]
+}
+
+export interface SkillsObject {
+    [prop: string]: Skill
+}
+
+export interface ProjectType {
     id: number,
     name: string,
     description: string,

@@ -1,10 +1,6 @@
-import { Skill } from "@/types/types";
+import { SkillsObject } from "@/types/types";
 
-interface Skills {
-    [prop: string]: Skill
-};
-
-export let skillsArray: Skills = {
+export let skillsObject: SkillsObject = {
     html:{
         id: 1,
         title: "HTML",
@@ -32,7 +28,17 @@ export let skillsArray: Skills = {
     },
     nextjs:{
         id: 6,
-        title: "Nextjs",
+        title: "NextJS",
         url: "/icons/nextjs.svg"
+    },
+    nodejs:{
+        id: 7,
+        title: "NodeJS",
+        url: "/icons/nodejs.svg"
+    },
+    npm:{
+        id: 8,
+        title: "NPM",
+        url: "/icons/npm.svg"
     }
 };
