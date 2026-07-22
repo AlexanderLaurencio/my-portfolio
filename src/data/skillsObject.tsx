@@ -36,14 +36,24 @@ export let skillsObject: SkillsObject = {
         title: "NodeJS",
         url: "/icons/nodejs.svg"
     },
-    npm:{
+    expressjs:{
         id: 8,
+        title: "ExpressJS",
+        url: "/icons/expressjs.svg"
+    },
+    npm:{
+        id: 9,
         title: "NPM",
         url: "/icons/npm.svg"
     },
     sqlite3:{
-        id: 0,
+        id: 10,
         title: "SQLite3",
         url: "/icons/sqlite3.svg"
-    }
+    },
+    git:{
+        id: 11,
+        title: "GIT",
+        url: "/icons/git.svg"
+    },
 };

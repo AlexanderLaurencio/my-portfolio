@@ -15,3 +15,9 @@
 .hero .skillsWrapper img:hover{
     scale: 1.1;
 }
+
+.skillsWrapper img[src="/icons/expressjs.svg"]{
+    background-color: hsla(0, 0%, 98%, 1);
+    border-radius: .2rem;
+    padding: 0 .2rem;
+}
