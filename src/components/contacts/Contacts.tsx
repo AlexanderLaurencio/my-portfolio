@@ -17,6 +17,9 @@ export default function Contacts() {
                 <Suspense fallback={<ContactSkeleton />}>
                     <Contact contactType="whatsapp" image="/icons/whatsapp.svg" url="tel:8498731354"/>
                 </Suspense>
+                <Suspense fallback={<ContactSkeleton />}>
+                    <Contact contactType="instagram" image="/icons/instagram.svg" url="https://www.instagram.com/alexander_neftali_miranda/"/>
+                </Suspense>
             </div>
         </section>
     )
